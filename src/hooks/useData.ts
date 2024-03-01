@@ -11,6 +11,7 @@ export const useData = <T>(
     endpoint: string, 
     requestConfig?: AxiosRequestConfig, 
     deps?: unknown[]) => {
+        
     const [data, setData] = useState<T[]>([]);
     const [error, setError] = useState('');
     const [isLoading, setIsLoading] = useState(false);
